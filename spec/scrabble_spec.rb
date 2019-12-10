@@ -14,4 +14,10 @@ describe('#scrabble') do
   it("returns a scrabble score of 8 given j or x") do
     expect(scrabble("J")).to(eq(8))
   end
+  it("returns a scrabble score of 2 given 'as'") do
+    expect(scrabble("as")).to(eq(2))
+  end
+  it("returns a scrabble score of 7 given 'as if'") do
+    expect(scrabble("as if")).to(eq(7))
+  end
 end
